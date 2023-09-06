@@ -112,10 +112,10 @@ abstract class EventListener {
  * ancak copy ve componentN fonksiyonlarını üretmez
  */
 
-sealed class Response {
-    data object Downloading : Response()
-    data class Success(val data: String) : Response()
-    data class Error(val exception: Exception) : Response()
+sealed class ResponseSample {
+    data object Downloading : ResponseSample()
+    data class Success(val data: String) : ResponseSample()
+    data class Error(val exception: Exception) : ResponseSample()
 }
 
 data object Error
